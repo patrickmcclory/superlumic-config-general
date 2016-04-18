@@ -1,0 +1,13 @@
+---
+- name: install cask applications for all users
+  homebrew_cask: name={{item}} state=present
+  with_items:
+    - slack
+    - google-chrome
+    - firefox
+    - evernote
+    - xmind
+    - the-unarchiver
+    - box-sync
+    - appcleaner
+    - microsoft-office
